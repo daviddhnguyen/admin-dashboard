@@ -1,22 +1,29 @@
+/* IMPORT FONT AND COLORS */
+
+
+/* RESET STYLE */
 * {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
     scroll-behavior: smooth;
+    text-decoration: none;
 }
 
-.main {
-    height: 100vh;
-}
-
+/* TEMP BORDER FOR DESIGN */
 .main>* {
     border: blue solid 1px;
 }
 
+/* SET MAIN LAYOUT */
+
 .main {
+    height: 100vh;
     display:grid;
-    grid-template-columns: 1fr 5fr;
+    grid-template-columns: 1fr 4fr;
     grid-template-rows: 1fr 5fr;
+
+    gap:
 }
 
 .header-container {
@@ -26,9 +33,110 @@
 .sidebar-container {
     grid-column: 1/2;
     grid-row: 1/3;
+
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 2rem;
+    padding-left: 1rem;
+}
+
+/* SIDEBAR LAYOUT */
+
+.links {
+    display: inherit;
+    flex-flow: inherit;
+    gap: 1rem;
 }
 
 .content-container {
     grid-column: 2 / 3;
     grid-row: 2 / 3;
+}
+
+.nav {
+    display:block
+}
+
+/* HEADER LAYOUT */
+
+.header-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 2fr;
+
+    align-items: center;
+    padding-left: 1rem;
+}
+
+.search {
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+.right-top-header {
+    grid-area: 1 / 2 / 2 / 3;
+
+    display: flex;
+    gap: 1rem;
+}
+
+.user-message {
+    grid-area: 2 / 1 / 3 / 2;
+}
+
+.left-btm-header {
+    grid-area: 2 / 2 / 3 / 3; 
+}
+
+/* MAIN CONTENT LAYOUT */
+
+.content-container>*>*>* {
+    border: red 1px solid;
+}
+
+.content-container {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: repeat(auto-fit, 1fr);
+
+    gap: 2rem;
+    padding: 1rem;
+}
+
+.projects-container {
+    grid-area: 1 / 1 / 3 / 2;
+}
+
+.right-main-content {
+    grid-area: 1 / 2 / 3 ;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.cards {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 1rem;
+
+    border-radius: 1rem;
+    padding: 2rem;
+}
+
+.icons {
+    display: flex;
+    justify-content: end;
+
+    gap: 1rem;
+}
+
+/* MAIN CONTENT RIGHT SIDE LAYOUT */
+
+.right-main-content {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    border: 3px red solid;
 }
