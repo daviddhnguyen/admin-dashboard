@@ -8,6 +8,7 @@
     box-sizing: border-box;
     scroll-behavior: smooth;
     text-decoration: none;
+    list-style: none;
 }
 
 /* TEMP BORDER FOR DESIGN */
@@ -138,6 +139,11 @@
 .right-main-content {
     display: grid;
     grid-template-rows: 1fr 1fr;
+    height: 50vh;
 
     border: 3px red solid;
+}
+
+.right-card {
+    overflow: auto;
 }
