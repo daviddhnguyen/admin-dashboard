@@ -1,5 +1,15 @@
 /* IMPORT FONT AND COLORS */
 
+/* SET GLOBAL VARIABLES */
+:root {
+    --card-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    --content-background: #e2e8f0;
+    --white: #f8fafc;
+    --card-radius: 0.5rem;
+    --slate: #1e293b;
+    --font-dark: #0f172a;
+    --font-light: #f1f5f9;
+}
 
 /* RESET STYLE */
 * {
@@ -11,9 +21,8 @@
     list-style: none;
 }
 
-/* TEMP BORDER FOR DESIGN */
-.main>* {
-    border: blue solid 1px;
+html {
+    color: var(--font-dark);
 }
 
 /* SET MAIN LAYOUT */
@@ -22,12 +31,14 @@
     height: 100vh;
     display:grid;
     grid-template-columns: 1fr 4fr;
-    grid-template-rows: 1fr 3fr;
+    grid-template-rows: 1fr 5fr;
 }
 
 .header-container {
     grid-area: 1 / 2 / 2 / 3;
 }
+
+/* SIDEBAR LAYOUT */
 
 .sidebar-container {
     grid-column: 1/2;
@@ -37,14 +48,22 @@
     flex-flow: column nowrap;
     gap: 2rem;
     padding-left: 1rem;
+    background-color: var(--slate);
+    color: var(--font-light);
+    padding: 2rem;
 }
 
-/* SIDEBAR LAYOUT */
 
 .links {
     display: inherit;
     flex-flow: inherit;
     gap: 1rem;
+    color: inherit;
+}
+
+.nav {
+    color: inherit;
+    padding-left: 2rem;
 }
 
 .content-container {
@@ -66,6 +85,9 @@
     align-items: center;
     padding: 2rem;
     gap: 1rem;
+
+    position:relative;
+    box-shadow: var(--card-shadow);
 }
 
 .search {
@@ -93,9 +115,6 @@
 
 /* MAIN CONTENT LAYOUT */
 
-.content-container>*>*>* {
-    border: red 1px solid;
-}
 
 .content-container {
     display: grid;
@@ -104,6 +123,7 @@
 
     gap: 2rem;
     padding: 1rem;
+    background-color: var(--content-background);
 }
 
 .projects-container {
@@ -126,8 +146,10 @@
     flex-flow: column nowrap;
     gap: 1rem;
 
-    border-radius: 1rem;
+    border-radius: var(--card-radius);
     padding: 2rem;
+    box-shadow: var(--card-shadow);
+    background-color: var(--white);
 }
 
 .icons {
@@ -142,11 +164,16 @@
 .right-main-content {
     display: grid;
     grid-template-rows: 1fr 1fr;
+    gap: 1rem;
+}
 
-    border: 3px red solid;
+.section {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 1rem;
 }
 
 .right-card {
     overflow: auto;
-    height: 40vh;
+    height: 30vh;
 }
