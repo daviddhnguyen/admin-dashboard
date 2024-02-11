@@ -138,5 +138,6 @@
 .right-main-content {
     display: grid;
     grid-template-rows: 1fr 1fr;
+
     border: 3px red solid;
 }
