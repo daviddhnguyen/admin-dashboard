@@ -15,19 +15,26 @@
     <meta name="keywords" content="ODIN SIGN-UP PROJECT">
 
     <!-- ADD ICONS FROM MATERIAL DESIGN ICON -->
+    <script src="//code.iconify.design/1/1.0.6/iconify.min.js"></script>
 </head>
+
 <body>
     <div class="main">
         <div class="header-container">
             <div class="search">
-                <label for="search">search icon</label>
+                <label for="search"><iconify-icon class="iconify" data-icon="mdi:search"></iconify-icon></label>
                 <input type="text" name="search" id="search">
             </div>
             <div class="right-top-header right-header">
-                <div class="alert-icon">bell</div>
-                <div class="user-profile">icon username</div>
+                <iconify-icon class="iconify" data-icon="mdi:bell-ring-outline"></iconify-icon>
+                <object class="user-icon" data="./assets/images/baby-duck.svg" width="30" height="30"></object>
+                <div class="user-profile"> Joan Wilson</div>
             </div>
-            <div class="user-message">icon hi username</div>
+            <div class="user-message">
+                <object class="user-icon" data="./assets/images/baby-duck.svg" width="30" height="30"></object>
+                <p>Hi there,</p>
+                <div class="user-profile"> Joan Wilson (<span class="username">@jwilson</span>)</div>
+            </div>
             <div class="right-btm-header right-header">
                 <buttons>New</buttons>
                 <buttons>Upload</buttons>
@@ -35,101 +42,127 @@
             </div>
         </div>
         <div class="sidebar-container">
-            <h1 class="header">Dashboard</h1>
-            <ul class="links">
-                <a href="" class="nav">link 1</a>
-                <a href="" class="nav">link 2</a>
-                <a href="" class="nav">link 3</a>
-                <a href="" class="nav">link 4</a>
-                <a href="" class="nav">link 5</a>
-                <a href="" class="nav">link 6</a>
-            </ul>
-            <ul class="links">
-                <a href="" class="nav">link 7</a>
-                <a href="" class="nav">link 8</a>
-                <a href="" class="nav">link 9</a>
-            </ul>
+            <h1 class="header"><iconify-icon class="iconify" data-icon="mdi:view-dashboard-variant"></iconify-icon> Dashboard</h1>
+            <div class="links">
+                <a href="" class="nav">
+                    <iconify-icon data-icon="mdi:home"></iconify-icon>
+                    Home</a>
+                <a href="" class="nav">
+                    <iconify-icon data-icon="mdi:user-card-details-outline"></iconify-icon>
+                    Profile
+                </a>
+                <a href="" class="nav">
+                    <iconify-icon data-icon="mdi:message-reply-text"></iconify-icon>
+                    Messages
+                </a>
+                <a href="" class="nav">
+                    <iconify-icon data-icon="mdi:history"></iconify-icon>
+                    History
+                </a>
+                <a href="" class="nav">
+                    <iconify-icon data-icon="mdi:clipboard-text-outline"></iconify-icon>
+                    Tasks
+                </a>
+                <a href="" class="nav">
+                    <iconify-icon data-icon="mdi:people-group"></iconify-icon>
+                    Communities
+                </a>
+            </div>
+            <div class="links">
+                <a href="" class="nav">
+                    <iconify-icon data-icon="mdi:settings"></iconify-icon>
+                    Settings
+                </a>
+                <a href="" class="nav">
+                    <iconify-icon data-icon="mdi:help-circle"></iconify-icon>
+                    Support
+                </a>
+                <a href="" class="nav">
+                    <iconify-icon data-icon="mdi:security-lock"></iconify-icon>
+                    Privacy
+                </a>
+            </div>
         </div>
         <div class="content-container">
             <div class="projects-container">
-                <h1>My Projects</h1>
+                <h2>My Projects</h2>
                 <div class="card-container">
                     <div class="cards">
-                        <div class="card-title">title1</div>
+                        <h3 class="card-title">title1</h3>
                         <div class="card-content">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet qui rerum non minus vero harum, laborum numquam. Commodi repellat pariatur dolor vero suscipit, molestias ad dolorum sunt corporis atque tempora.</div>
                         <div class="icons">
-                            <div class="star"><span class="iconify" data-icon="star-plus"></span></div>
-                            <div class="watch">eye</div>
-                            <div class="share">share</div>
+                            <button class="iconify star" data-icon="mdi:star-plus"></button>
+                            <button class="iconify eye" data-icon="mdi:eye-plus"></button>
+                            <button class="iconify share" data-icon="mdi:share-variant"></button>
                         </div>
                     </div>
                     <div class="cards">
-                        <div class="card-title">title2</div>
+                        <h3 class="card-title">title2</h3>
                         <div class="card-content">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet qui rerum non minus vero harum, laborum numquam. Commodi repellat pariatur dolor vero suscipit, molestias ad dolorum sunt corporis atque tempora.</div>
                         <div class="icons">
-                            <div class="star">star</div>
-                            <div class="watch">eye</div>
-                            <div class="share">share</div>
+                            <button class="iconify star" data-icon="mdi:star-plus"></button>
+                            <button class="iconify eye" data-icon="mdi:eye-plus"></button>
+                            <button class="iconify share" data-icon="mdi:share-variant"></button>
                         </div>
                     </div>
                     <div class="cards">
-                        <div class="card-title">title3</div>
+                        <h3 class="card-title">title3</h3>
                         <div class="card-content">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet qui rerum non minus vero harum, laborum numquam. Commodi repellat pariatur dolor vero suscipit, molestias ad dolorum sunt corporis atque tempora.</div>
                         <div class="icons">
-                            <div class="star">star</div>
-                            <div class="watch">eye</div>
-                            <div class="share">share</div>
+                            <button class="iconify star" data-icon="mdi:star-plus"></button>
+                            <button class="iconify eye" data-icon="mdi:eye-plus"></button>
+                            <button class="iconify share" data-icon="mdi:share-variant"></button>
                         </div>
                     </div>
                     <div class="cards">
-                        <div class="card-title">title4</div>
+                        <h3 class="card-title">title4</h3>
                         <div class="card-content">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet qui rerum non minus vero harum, laborum numquam. Commodi repellat pariatur dolor vero suscipit, molestias ad dolorum sunt corporis atque tempora.</div>
                         <div class="icons">
-                            <div class="star">star</div>
-                            <div class="watch">eye</div>
-                            <div class="share">share</div>
+                            <button class="iconify star" data-icon="mdi:star-plus"></button>
+                            <button class="iconify eye" data-icon="mdi:eye-plus"></button>
+                            <button class="iconify share" data-icon="mdi:share-variant"></button>
                         </div>
                     </div>
                     <div class="cards">
-                        <div class="card-title">title5</div>
+                        <h3 class="card-title">title5</h3>
                         <div class="card-content">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet qui rerum non minus vero harum, laborum numquam. Commodi repellat pariatur dolor vero suscipit, molestias ad dolorum sunt corporis atque tempora.</div>
                         <div class="icons">
-                            <div class="star">star</div>
-                            <div class="watch">eye</div>
-                            <div class="share">share</div>
+                            <button class="iconify star" data-icon="mdi:star-plus"></button>
+                            <button class="iconify eye" data-icon="mdi:eye-plus"></button>
+                            <button class="iconify share" data-icon="mdi:share-variant"></button>
                         </div>
                     </div>
                     <div class="cards">
-                        <div class="card-title">title6</div>
+                        <h3 class="card-title">title6</h3>
                         <div class="card-content">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet qui rerum non minus vero harum, laborum numquam. Commodi repellat pariatur dolor vero suscipit, molestias ad dolorum sunt corporis atque tempora.</div>
                         <div class="icons">
-                            <div class="star">star</div>
-                            <div class="watch">eye</div>
-                            <div class="share">share</div>
+                            <button class="iconify star" data-icon="mdi:star-plus"></button>
+                            <button class="iconify eye" data-icon="mdi:eye-plus"></button>
+                            <button class="iconify share" data-icon="mdi:share-variant"></button>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="right-main-content">
                 <div class="section">
-                    <h1>Annoucements</h1>
+                    <h2>Annoucements</h2>
                     <div class="cards right-card">
                         <div class="annoucements">
-                            <h2>Site Maintenance</h2>
+                            <h3>Site Maintenance</h3>
                             <div class="annoucement-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt porro magni esse minus quae nihil atque similique! Repellat quidem officia excepturi! Deleniti tempora impedit, quo ab voluptatibus eaque odio ipsum.</div>
                         </div>
                         <div class="annoucements">
-                            <h2>Community Share Day</h2>
+                            <h3>Community Share Day</h3>
                             <div class="annoucement-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus eligendi ratione laudantium ducimus similique corporis, sapiente, quam alias obcaecati tempore quisquam expedita sit aspernatur officia esse fugiat, tempora quia explicabo?</div>
                         </div>
                         <div class="annoucements">
-                            <h2>Updated Privacy Policy</h2>
+                            <h3>Updated Privacy Policy</h3>
                             <div class="annoucement-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe quae magni itaque minus velit excepturi aliquid magnam, fuga dignissimos, cupiditate doloremque laborum earum perspiciatis quia odit nostrum corrupti laudantium. Deleniti!</div>
                         </div>
                     </div>
                 </div>
                 <div class="section">
-                    <h1>Trending</h1>
+                    <h2>Trending</h2>
                     <div class="cards right-card">
                         <ul class="users-list">
                             <li class="trending">ICON USERNAME</li>
@@ -144,6 +177,5 @@
             </div>
         </div>
     </div>
-    <script src="//code.iconify.design/1/1.0.6/iconify.min.js"></script>
 </body>
 </html>
